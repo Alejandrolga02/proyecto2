@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
 </head>
 
 <div id="contenedor">
-
     <body>
         <div id="encabezado">
             <header>
@@ -20,30 +18,51 @@
 
         <div id="menu">
             <nav>
-                <h3>Menu</h3>
+                <ul>
+                    <li><a href="www.gmail.com">Mi correo</a></li>
+                    <li><a href="www.debate.com">Noticias</a></li>
+                    <li><a href="www.weather.com">El clima</a></li>
+                </ul>
             </nav>
         </div>
 
-        <div id="seccion">
-            <section>
-                <div id="articulo1">
-                    <article>
-                        <h3>Articulo 1</h3>
-                    </article>
-                </div>
-
-                <div id="articulo2">
-                    <article>
-                        <h3>Articulo 2</h3>
-                    </article>
-                </div>
-            </section>
+        <div class="contenido">
+            <div id="seccion">
+                <section>
+                    <div id="articulo1">
+                        <article>
+                            <h3 class="encabezado_articulo">Articulo 1</h3>
+                            <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ad tenetur quod recusandae asperiores repudiandae nesciunt fugiat sapiente voluptatibus eum. Unde aut, quod ex tenetur neque itaque illo odio distinctio.</p>
+                        </article>
+                        <picture>
+                            <img src="../img/01.jpg" alt="Grafica AMD" class="imagenes">
+                        </picture>
+                        <small style="display: block; margin: 3em 3em 1em 3em; font-family:sans-serif">Fue publicado el 21 de Sept del 2022</small>
+                    </div>
+    
+                    <div id="articulo2">
+                        <article>
+                            <h3 class="encabezado_articulo">Articulo 2</h3>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur architecto possimus. Reiciendis incidunt illo assumenda quibusdam quis quaerat. Aut suscipit praesentium sunt, labore voluptate eveniet temporibus repudiandae quibusdam non.</p>
+                        </article>
+                        <picture>
+                            <img src="../img/02.jpg" alt="Grafica NVIDIA" class="imagenes">
+                        </picture>
+                        <!-- Fecha de publicacion de articulo -->
+                        <small style="display: block; margin: 3em 3em 1em 3em; font-family:sans-serif">Fue publicado el 21 de Sept del 2022</small>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <div id="fueraSeccion">
             <aside>
                 <nav>
-                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="www.gmail.com">Mi correo</a></li>
+                        <li><a href="www.debate.com">Noticias</a></li>
+                        <li><a href="www.weather.com">El clima</a></li>
+                    </ul>
                 </nav>
             </aside>
         </div>
@@ -55,5 +74,4 @@
         </div>
     </body>
 </div>
-
 </html>
