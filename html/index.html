@@ -1,77 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../css/estilos.css" as="style">
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Obtener fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <title>Practica 2</title>
 </head>
 
-<div id="contenedor">
-    <body>
-        <div id="encabezado">
-            <header>
-                <h1>Mi pagina</h1>
-            </header>
+<body>
+    <nav class="navbar flex-row">
+        <a class="nav-item separacion-horizontal" href="www.gmail.com">Mi correo</a>
+        <a class="nav-item separacion-horizontal" href="www.debate.com">Noticias</a>
+        <a class="nav-item separacion-horizontal" href="www.weather.com">El clima</a>
+    </nav>
+
+    <div class="contenido">
+        <h1 class="titulo">Venta de Graficas</h1>
+        <div id="seccion">
+            <section>
+                <div class="articulo">
+                    <article>
+                        <h3 class="encabezado-articulo">Grafica AMD</h3>
+                        <p class="texto">AMD es una compañía estadounidense de semiconductores con sede en Santa Clara, California, que desarrolla procesadores de computación y productos tecnológicos similares de consumo. Sus productos principales incluyen microprocesadores, chipsets para placas base, circuitos integrados auxiliares, procesadores embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores personales y aplicaciones para sistemas embebidos.</p>
+                    </article>
+                    <picture>
+                        <img src="../img/01.jpg" alt="Grafica AMD" class="imagenes">
+                    </picture>
+                    <p class="fecha">Fue publicado el 21 de Sept del 2022</p>
+                </div>
+
+                <div class="articulo">
+                    <article>
+                        <h3 class="encabezado-articulo">Grafica NVIDIA</h3>
+                        <p class="texto">Nvidia Corporation es una empresa multinacional especializada en el desarrollo de unidades de procesamiento gráfico y tecnologías de circuitos integrados para estaciones de trabajo, ordenadores personales y dispositivos móviles. Con sede en Santa Clara, California, la compañía se ha convertido en uno de los principales proveedores de circuitos integrados (CI), como unidades de procesamiento gráfico (GPU) y conjuntos de chips usados en tarjetas gráficas para consolas y tarjetas madre para PC.</p>
+                    </article>
+                    <picture>
+                        <img src="../img/02.jpg" alt="Grafica NVIDIA" class="imagenes">
+                    </picture>
+                    <!-- Fecha de publicacion de articulo -->
+                    <p class="fecha">Fue publicado el 21 de Sept del 2022</p>
+                </div>
+            </section>
         </div>
 
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li><a href="www.gmail.com">Mi correo</a></li>
-                    <li><a href="www.debate.com">Noticias</a></li>
-                    <li><a href="www.weather.com">El clima</a></li>
-                </ul>
-            </nav>
-        </div>
+        <aside class="menu-lateral flex-column">
+            <a class="nav-item separacion-vertical" href="www.gmail.com">Mi correo</a>
+            <a class="nav-item separacion-vertical" href="www.debate.com">Noticias</a>
+            <a class="nav-item separacion-vertical" href="www.weather.com">El clima</a>
+        </aside>
+    </div>
 
-        <div class="contenido">
-            <div id="seccion">
-                <section>
-                    <div id="articulo1">
-                        <article>
-                            <h3 class="encabezado_articulo">Articulo 1</h3>
-                            <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ad tenetur quod recusandae asperiores repudiandae nesciunt fugiat sapiente voluptatibus eum. Unde aut, quod ex tenetur neque itaque illo odio distinctio.</p>
-                        </article>
-                        <picture>
-                            <img src="../img/01.jpg" alt="Grafica AMD" class="imagenes">
-                        </picture>
-                        <small style="display: block; margin: 3em 3em 1em 3em; font-family:sans-serif">Fue publicado el 21 de Sept del 2022</small>
-                    </div>
-    
-                    <div id="articulo2">
-                        <article>
-                            <h3 class="encabezado_articulo">Articulo 2</h3>
-                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur architecto possimus. Reiciendis incidunt illo assumenda quibusdam quis quaerat. Aut suscipit praesentium sunt, labore voluptate eveniet temporibus repudiandae quibusdam non.</p>
-                        </article>
-                        <picture>
-                            <img src="../img/02.jpg" alt="Grafica NVIDIA" class="imagenes">
-                        </picture>
-                        <!-- Fecha de publicacion de articulo -->
-                        <small style="display: block; margin: 3em 3em 1em 3em; font-family:sans-serif">Fue publicado el 21 de Sept del 2022</small>
-                    </div>
-                </section>
-            </div>
-        </div>
+    <footer class="pie flex-row">
+        <h3 class="centrado">Pagina creada por: Alejandro Ivan Lizarraga Rojas</h3>
+    </footer>
+</body>
 
-        <div id="fueraSeccion">
-            <aside>
-                <nav>
-                    <ul>
-                        <li><a href="www.gmail.com">Mi correo</a></li>
-                        <li><a href="www.debate.com">Noticias</a></li>
-                        <li><a href="www.weather.com">El clima</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-
-        <div id="pie">
-            <footer>
-                <h6>Pie de pagina</h1>
-            </footer>
-        </div>
-    </body>
-</div>
 </html>
